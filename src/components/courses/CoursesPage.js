@@ -9,7 +9,6 @@ import CourseList from './CourseList';
 class CoursesPage extends React.Component {
   componentDidMount() {
     const { courses, authors, actions } = this.props;
-    debugger;
     if (!courses.length) {
       actions.loadCourses().catch(error => {
         alert('Loading courses failed' + error);
